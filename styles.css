@@ -1,0 +1,288 @@
+body {
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+h1 a{
+    color: white;
+    text-decoration: none;
+
+}
+
+header {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+nav a:hover{
+    color: rgb(255, 0, 0, 0.521);
+}
+
+.hero {
+    background-image: url('hero-image.jpg');
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: red;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.hero button:hover{
+    background-color: rgba(255, 0, 0, 0.521);
+}
+
+.hero button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-card {
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1c1c1c;
+}
+
+/* Hamburger button styles */
+.hamburger {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.hamburger i {
+    color: white;
+}
+
+/* Sidebar styles */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #1c1c1c;
+    color: white;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 9;
+}
+
+.sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Start hidden */
+    background-color: #1c1c1c;
+    color: white;
+    overflow-x: hidden;
+    transition: left 0.3s; /* Smooth transition */
+    padding-top: 60px;
+    z-index: 9;
+}
+.responsive-iframe {
+    width: 80%;
+    height: 580px;
+    border: 0;
+  }
+
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .forlarge {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .responsive-iframe {
+        width: 98%;
+        height: 220px;
+      }
+    .hero p {
+        font-size: smaller;
+        margin-top: 10px;
+       bottom: 2px;
+    }
+    .hero h1 {
+        margin-bottom: 10px;
+    }
+   
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 24px;
+    }
+    .hero button {
+        padding: 8px 16px;
+    }
+    .movie-grid {
+        gap: 10px;
+        padding: 10px;
+    }
+    .movie-card h3 {
+        font-size: 16px;
+    }
+}
+
+.loader { 
+    background-color: rgba(0, 0, 0, 0.747);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.75s, visiblity 0.75s ;
+
+}
+
+
+.loader-hidden{
+   opacity: 0;
+   visibility: hidden;
+}
+
+.loader::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 7px solid #dddddd8c;
+    border-top-color: rgba(255, 0, 0, 0.521);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+
+}
+
+@keyframes loading{
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+
+.into p{
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+    margin: 15px;
+    padding: 13px;
+    color: #ffffff;
+    
+}
+
+.intro {
+    color: white;
+    padding: 50px 20px; /* Increased padding for top and bottom */
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto; /* Center the intro block */
+    max-width: 800px; /* Limit the width for better readability */
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px; /* Spacing below the header */
+}
+
+.intro p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 20px 0; /* Space above and below paragraphs */
+}
+

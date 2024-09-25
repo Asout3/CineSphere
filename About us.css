@@ -1,0 +1,51 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container {
+    width: 300px;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.233);
+    margin-bottom: 50px;
+}
+h4 {
+    margin-bottom: 10px;
+}
+input{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    outline: none;
+
+}
+textarea {
+    width: 90%;
+    padding: 10px;
+    align-items: center;
+    outline: none;
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+
+}
+#submit {
+    border: none;
+    background-color: red;
+    color: white;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+
+#submit:hover{
+    background-color: rgba(255, 0, 0, 0.521);
+}
+

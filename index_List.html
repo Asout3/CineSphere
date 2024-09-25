@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="watch.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>CineSphere</title>
+</head>
+<body>
+
+    <div class="loader" id="loader"></div>
+
+        <!-- Hamburger button for small screens -->
+        <div class="hamburger" id="hamburger">
+            <i class="fa fa-bars"></i>
+        </div>
+    
+        <!-- Sidebar for small screens -->
+        <div class="sidebar" id="sidebar">
+            <a href="#" class="close-btn" id="close-btn"><i class="fa fa-times"></i></a>
+            <a href="index.html">Home</a>
+            <a href="index_List.html">List</a>
+            <a href="index_About Us.html">About US</a>
+        </div>
+    
+        <header>
+            <h1 id="homer"><a href="index.html">CineSphere</a></h1>
+            <!-- Navigation for large screens -->
+            <div class="forlarge">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index_List.html">List</a></li>
+                        <li><a href="index_About Us.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <main>
+        <section class="movie-list">
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/UbHShASHG9E?rel=0&modestbranding=1&controls=1&showinfo=0', 'አጨብጭቡለት', '')">
+                <img src="images/movie1.jpg" alt="አጨብጭቡለት">
+                <h3>አጨብጭቡለት</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/F6koJrzrvpM?rel=0&modestbranding=1&controls=1&showinfo=0', 'ይሉኝታ', '')">
+                <img src="images/movie2.jpg" alt="Movie 1">
+                <h3>ይሉኝታ</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/k662i8OmOgg?rel=0&modestbranding=1&controls=1&showinfo=0', 'ፔንዱለም', '')">
+                <img src="images/movie3.jpg" alt="Movie 1">
+                <h3>ፔንዱለም</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/v7ql2OO9Ixk?rel=0&modestbranding=1&controls=1&showinfo=0', 'ታዛ ', '')">
+                <img src="images/movie5.jpg" alt="Movie 1">
+                <h3>ታዛ</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/4-CoaY9Op78?rel=0&modestbranding=1&controls=1&showinfo=0', 'የጠፋ ጊዜ ', '')">
+                <img src="images/movie6.jpg" alt="Movie 1">
+                <h3>የጠፋ ጊዜ</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/xG40wEeVuo4?rel=0&modestbranding=1&controls=1&showinfo=0', 'አንድ ታሪክ', '')">
+                <img src="images/movie7.jpg" alt="Movie 1">
+                <h3>አንድ ታሪክ</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/phmIAGUlKVg?rel=0&modestbranding=1&controls=1&showinfo=0', 'ወዳጅ ', '')">
+                <img src="images/movie8.jpg" alt="Movie 1">
+                <h3>ወዳጅ</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube.com/embed/AEqC9Q3tNrk?rel=0&modestbranding=1&controls=1&showinfo=0', 'ማን ያዘዋል', '')">
+                <img src="images/movie9.jpg" alt="Movie 1">
+                <h3>ማን ያዘዋል</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube.com/embed/4AY2Pqa7EG8?rel=0&modestbranding=1&controls=1&showinfo=0', 'ሁለት አይነት', '')">
+                <img src="images/movie10.jpg" alt="Movie 1">
+                <h3>ሁለት አይነት</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/KqG7THWnGys?rel=0&modestbranding=1&controls=1&showinfo=0', 'ስንብት', '')">
+                <img src="images/movie11.jpg" alt="ስንብት">
+                <h3>ስንብት</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/r8YUEipVCkQ?rel=0&modestbranding=1&controls=1&showinfo=0', 'ሳቋ', '')">
+                <img src="images/movie12.jpg" alt="ሳቋ">
+                <h3>ሳቋ</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/2aAU4m_uoTw?rel=0&modestbranding=1&controls=1&showinfo=0', 'ገምዛ', '')">
+                <img src="images/movie13.jpg" alt="ገምዛ">
+                <h3>ገምዛ</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube.com/embed/NzWtWEGMgZc?rel=0&modestbranding=1&controls=1&showinfo=0', 'ቃል', '')">
+                <img src="images/movie14.jpg" alt="ቃል">
+                <h3>ቃል</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube.com/embed/1hhWvR0M6RY?rel=0&modestbranding=1&controls=1&showinfo=0', 'ህዳር', '')">
+                <img src="images/movie15.jpg" alt="ህዳር">
+                <h3>ህዳር</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/-BgFT2qz4Ng?rel=0&modestbranding=1&controls=1&showinfo=0', 'አማላዩ', '.')">
+                <img src="images/movie16.jpg" alt="አማላዩ">
+                <h3>አማላዩ</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/nHukT0S8U48?rel=0&modestbranding=1&controls=1&showinfo=0', 'ሶስተኛው አይን', '')">
+                <img src="images/movie17.jpg" alt="ሶስተኛው አይን">
+                <h3>ሶስተኛው አይን</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/meNNFFcW9W0?rel=0&modestbranding=1&controls=1&showinfo=0', 'ግራና ቀኝ', '')">
+                <img src="images/movie18.jpg" alt="ግራና ቀኝ">
+                <h3>ግራና ቀኝ</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/MXBoTPa-X1g?rel=0&modestbranding=1&controls=1&showinfo=0', 'ማርኩሽ', '')">
+                <img src="images/movie19.jpg" alt="ማርኩሽ">
+                <h3>ማርኩሽ</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/owBlnxEhFWw?rel=0&modestbranding=1&controls=1&showinfo=0', ' ውጪ ጉዳይ', '')">
+                <img src="images/movie20.jpg" alt=" ውጪ ጉዳይ">
+                <h3> ውጪ ጉዳይ</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/ILJebggfM84?rel=0&modestbranding=1&controls=1&showinfo=0', 'የኔታ', '')">
+                <img src="images/movie21.jpg" alt="የኔታ">
+                <h3>የኔታ</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/1Rd3sfbCguk?rel=0&modestbranding=1&controls=1&showinfo=0', 'የሱፍ አበባ', '')">
+                <img src="images/movie22.jpg" alt="የሱፍ አበባ">
+                <h3>የሱፍ አበባ</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/ON6K73pzKQg?rel=0&modestbranding=1&controls=1&showinfo=0', 'አክቲቪስቱ', '')">
+                <img src="images/movie23.jpg" alt="አክቲቪስቱ">
+                <h3>አክቲቪስቱ</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/zYp-euzxdA8?rel=0&modestbranding=1&controls=1&showinfo=0', 'ዳይናማይት', '')">
+                <img src="images/movie24.jpg" alt="ዳይናማይት">
+                <h3>ዳይናማይት</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/uF2YGUon3Mg?rel=0&modestbranding=1&controls=1&showinfo=0', 'የሴም ወርቅ', '')">
+                <img src="images/movie25.jpg" alt="የሴም ወርቅ">
+                <h3>የሴም ወርቅ</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/4qphj5IpKh0?rel=0&modestbranding=1&controls=0&showinfo=0', 'የበረዶ ዘመን 1', '')">
+                <img src="images/movie26.jpg" alt="የበረዶ ዘመን 1">
+                <h3>የበረዶ ዘመን 1</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/YRCGASyMafw?rel=0&modestbranding=1&controls=0&showinfo=0', 'ይፈለጋል', '')">
+                <img src="images/movie27.jpg" alt="ይፈለጋል">
+                <h3>ይፈለጋል</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/8iC1tvA1faw?rel=0&modestbranding=1&controls=0&showinfo=0', 'ተፈጣሪ', '')">
+                <img src="images/movie28.jpg" alt="ተፈጣሪ">
+                <h3>ተፈጣሪ</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube.com/embed/snZbBt5IOHk?rel=0&modestbranding=1&controls=0&showinfo=0', 'ስቄ ልሙት', '')">
+                <img src="images/movie30.jpg" alt="ስቄ ልሙት">
+                <h3>ስቄ ልሙት</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube.com/embed/sud4YmfCh-0?rel=0&modestbranding=0&controls=0&showinfo=0', 'ፈላሻዉ', '')">
+                <img src="images/movie29.jpg" alt="ፈላሻዉ">
+                <h3>ፈላሻዉ</h3>
+            </div>
+
+            <div class="movie-card" onclick="loadMovie('https://www.youtube-nocookie.com/embed/EUHroV3eQlc?rel=0&modestbranding=0&controls=0&showinfo=0', 'አትፍረድ', '')">
+                <img src="images/movie31.jpg" alt="አትፍረድ">
+                <h3>አትፍረድ</h3>
+            </div>
+        </section>
+        
+
+        <div id="movie-details" class="hidden">
+            <div id="video-player">
+                <iframe class="responsive-iframe" id="video-iframe" src="" title="" frameborder="0" allow="accelerometer; autoplay;  encrypted-media; gyroscope; " allowfullscreen></iframe>
+            </div>
+
+            <h2 id="movie-title"></h2>
+
+            <!-- Large box for description -->
+            <div class="description-box">
+                <p id="movie-description"></p>
+            </div>
+
+            <button onclick="goBack()">Back to List</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CineSphere</p>
+    </footer>
+
+    <script src="watch.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
